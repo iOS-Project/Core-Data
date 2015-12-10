@@ -7,6 +7,7 @@
 //
 
 #import "AddViewController.h"
+#import <CoreData/CoreData.h>
 
 @interface AddViewController ()
 
@@ -14,9 +15,23 @@
 
 @implementation AddViewController
 
+-(NSManagedObjectContext *)managedObjectContext{
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication] delegate];
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // if update data
+    if (self.phone) {
+        self.phoneName.text = [self.phone valueForKey:@"brand"];
+        self.phoneModel.text = [self.phone valueForKey:@"model"];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +49,26 @@
 }
 */
 
+- (IBAction)addAction:(id)sender {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    if (self.phone) {
+        // update the existing field
+        [self.phone setValue:self.phoneName.text forKey:@"brand"];
+        [self.phone setValue:self.phoneModel.text forKey:@"model"];
+    }else{
+        // add new row
+        // NSManagedObject is a table
+        NSManagedObject *newPhone = [NSEntityDescription insertNewObjectForEntityForName:@"Phone" inManagedObjectContext:context];
+        [newPhone setValue:self.phoneName.text forKey:@"brand"];
+        [newPhone setValue:self.phoneModel.text forKey:@"model"];
+    }
+    
+    NSError *error = nil;
+    if (![context save:&error]) {
+        NSLog(@"Error : %@ %@", error, [error localizedDescription]);
+    }
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
 @end

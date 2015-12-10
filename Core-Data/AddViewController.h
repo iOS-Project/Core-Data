@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface AddViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *phoneName;
+@property (weak, nonatomic) IBOutlet UITextField *phoneModel;
+@property (weak, nonatomic) IBOutlet UIButton *addPhone;
+@property(strong)NSManagedObjectModel *phone;
+
+- (IBAction)addAction:(id)sender;
 
 @end

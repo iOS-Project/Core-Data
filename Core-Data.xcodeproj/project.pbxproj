@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		D59D52051C17BA5600EEB544 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D59D52041C17BA5600EEB544 /* main.m */; };
 		D59D52081C17BA5600EEB544 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D59D52071C17BA5600EEB544 /* AppDelegate.m */; };
-		D59D520B1C17BA5600EEB544 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D59D520A1C17BA5600EEB544 /* ViewController.m */; };
 		D59D520E1C17BA5600EEB544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59D520C1C17BA5600EEB544 /* Main.storyboard */; };
 		D59D52111C17BA5600EEB544 /* Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D59D520F1C17BA5600EEB544 /* Core_Data.xcdatamodeld */; };
 		D59D52131C17BA5600EEB544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59D52121C17BA5600EEB544 /* Assets.xcassets */; };
 		D59D52161C17BA5600EEB544 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59D52141C17BA5600EEB544 /* LaunchScreen.storyboard */; };
 		D59D52211C17BA5600EEB544 /* Core_DataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D59D52201C17BA5600EEB544 /* Core_DataTests.m */; };
 		D59D522C1C17BA5600EEB544 /* Core_DataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D59D522B1C17BA5600EEB544 /* Core_DataUITests.m */; };
+		D59D523A1C17BAC800EEB544 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59D52391C17BAC800EEB544 /* CoreData.framework */; };
+		D59D523D1C17BB5C00EEB544 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D59D523C1C17BB5C00EEB544 /* TableViewController.m */; };
+		D59D52401C17CCDC00EEB544 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D59D523F1C17CCDC00EEB544 /* AddViewController.m */; };
+		D5D898051C19C6130085550D /* AddEditEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D898041C19C6130085550D /* AddEditEmployee.m */; };
+		D5F4F0131C1815A6004616FF /* EmployeeTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F4F0121C1815A6004616FF /* EmployeeTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +44,6 @@
 		D59D52041C17BA5600EEB544 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D59D52061C17BA5600EEB544 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D59D52071C17BA5600EEB544 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D59D52091C17BA5600EEB544 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D59D520A1C17BA5600EEB544 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D59D520D1C17BA5600EEB544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D59D52101C17BA5600EEB544 /* Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data.xcdatamodel; sourceTree = "<group>"; };
 		D59D52121C17BA5600EEB544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,15 @@
 		D59D52271C17BA5600EEB544 /* Core-DataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core-DataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59D522B1C17BA5600EEB544 /* Core_DataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Core_DataUITests.m; sourceTree = "<group>"; };
 		D59D522D1C17BA5600EEB544 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D59D52391C17BAC800EEB544 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D59D523B1C17BB5C00EEB544 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		D59D523C1C17BB5C00EEB544 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		D59D523E1C17CCDC00EEB544 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		D59D523F1C17CCDC00EEB544 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		D5D898031C19C6130085550D /* AddEditEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditEmployee.h; sourceTree = "<group>"; };
+		D5D898041C19C6130085550D /* AddEditEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditEmployee.m; sourceTree = "<group>"; };
+		D5F4F0111C1815A6004616FF /* EmployeeTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeTable.h; sourceTree = "<group>"; };
+		D5F4F0121C1815A6004616FF /* EmployeeTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeTable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59D523A1C17BAC800EEB544 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,7 @@
 		D59D51F71C17BA5600EEB544 = {
 			isa = PBXGroup;
 			children = (
+				D59D52391C17BAC800EEB544 /* CoreData.framework */,
 				D59D52021C17BA5600EEB544 /* Core-Data */,
 				D59D521F1C17BA5600EEB544 /* Core-DataTests */,
 				D59D522A1C17BA5600EEB544 /* Core-DataUITests */,
@@ -105,8 +118,14 @@
 			children = (
 				D59D52061C17BA5600EEB544 /* AppDelegate.h */,
 				D59D52071C17BA5600EEB544 /* AppDelegate.m */,
-				D59D52091C17BA5600EEB544 /* ViewController.h */,
-				D59D520A1C17BA5600EEB544 /* ViewController.m */,
+				D59D523B1C17BB5C00EEB544 /* TableViewController.h */,
+				D59D523C1C17BB5C00EEB544 /* TableViewController.m */,
+				D59D523E1C17CCDC00EEB544 /* AddViewController.h */,
+				D59D523F1C17CCDC00EEB544 /* AddViewController.m */,
+				D5F4F0111C1815A6004616FF /* EmployeeTable.h */,
+				D5F4F0121C1815A6004616FF /* EmployeeTable.m */,
+				D5D898031C19C6130085550D /* AddEditEmployee.h */,
+				D5D898041C19C6130085550D /* AddEditEmployee.m */,
 				D59D520C1C17BA5600EEB544 /* Main.storyboard */,
 				D59D52121C17BA5600EEB544 /* Assets.xcassets */,
 				D59D52141C17BA5600EEB544 /* LaunchScreen.storyboard */,
@@ -276,10 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59D52401C17CCDC00EEB544 /* AddViewController.m in Sources */,
 				D59D52111C17BA5600EEB544 /* Core_Data.xcdatamodeld in Sources */,
-				D59D520B1C17BA5600EEB544 /* ViewController.m in Sources */,
+				D5D898051C19C6130085550D /* AddEditEmployee.m in Sources */,
+				D5F4F0131C1815A6004616FF /* EmployeeTable.m in Sources */,
 				D59D52081C17BA5600EEB544 /* AppDelegate.m in Sources */,
 				D59D52051C17BA5600EEB544 /* main.m in Sources */,
+				D59D523D1C17BB5C00EEB544 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +527,7 @@
 				D59D52321C17BA5600EEB544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D59D52331C17BA5600EEB544 /* Build configuration list for PBXNativeTarget "Core-DataTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +536,7 @@
 				D59D52351C17BA5600EEB544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D59D52361C17BA5600EEB544 /* Build configuration list for PBXNativeTarget "Core-DataUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +545,7 @@
 				D59D52381C17BA5600EEB544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

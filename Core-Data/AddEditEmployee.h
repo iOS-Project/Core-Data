@@ -10,4 +10,10 @@
 
 @interface AddEditEmployee : UIViewController
 
+@property(strong)NSManagedObjectModel* employee;
+
+@property (weak, nonatomic) IBOutlet UITextField *idTextField;
+@property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameTextField;
+- (IBAction)saveAction:(id)sender;
 @end
